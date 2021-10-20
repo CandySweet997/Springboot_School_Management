@@ -1,6 +1,7 @@
 package ir.school.school.modules.controller;
 
 import ir.school.school.modules.model.Professors;
+import ir.school.school.modules.model.Students;
 import ir.school.school.modules.service.ProfessorsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -31,5 +32,9 @@ public class ProfessorsController {
         return professorsService.findAllProfessors();
     }
 
+//    @RequestMapping(value = {"/",""},method = RequestMethod.POST)
+//    public List<Students> StudentsList(Professors professors){
+//
+//    }
 
 }
